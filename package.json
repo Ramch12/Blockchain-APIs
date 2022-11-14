@@ -1,0 +1,15 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.3.3",
+    "node-fetch-commonjs": "^3.2.4"
+  }
+}
