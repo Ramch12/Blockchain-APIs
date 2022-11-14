@@ -23,7 +23,6 @@ async function API() {
                 .forEach(async (element) => {
                     let data1 = await conn.query("select * from users where to_address=?", [element.to])
                     if (!data1[0].length) return
-                    delete element.input;
                     await conn.query("insert into user_det set ?", element);
                 });
             await conn.query('update last_scanned_block set block=?', [token]);
